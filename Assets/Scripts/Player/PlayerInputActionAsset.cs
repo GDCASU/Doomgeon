@@ -478,6 +478,17 @@ public partial class @PlayerInputActionAsset : IInputActionCollection2, IDisposa
                 },
                 {
                     ""name"": """",
+                    ""id"": ""5bcb881e-ad8a-4c29-94c4-bd644110a18b"",
+                    ""path"": ""<Mouse>/leftButton"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Touch"",
+                    ""action"": ""Strike"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
                     ""id"": ""2faeffc6-51c1-4e47-9420-a6311f4b9138"",
                     ""path"": ""<Keyboard>/f"",
                     ""interactions"": """",

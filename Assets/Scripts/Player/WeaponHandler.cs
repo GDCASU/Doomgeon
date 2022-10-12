@@ -16,7 +16,7 @@ public class WeaponHandler : MonoBehaviour
     [SerializeField] Weapon[] weapons;
 
     Character wielder;
-
+    
     Weapon currentWeapon;
     int maxWeapons = 0;
     int numOfWeapons = 0;

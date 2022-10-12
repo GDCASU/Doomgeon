@@ -46,8 +46,25 @@ public abstract class MeleeWeapon : Weapon
 
     public override void Reload() { }
     public override void Shoot(bool isStarting) { }
-    public override void PrepareWeapon(WeaponEquipData data) { }
-    public override void NeglectWeapon(WeaponUnequipData data) { }
+    
+    public override void PrepareWeapon(WeaponEquipData data) 
+    {
+        attachedCollider.enabled = false;
+        equipableEntity.Equip();
+        transform.SetParent(data.container);
+        transform.localPosition = offsetPosition;
+        transform.localRotation = Quaternion.Euler(offsetRotation);
+        Target = data.target;
+    }
+
+    public override void NeglectWeapon(WeaponUnequipData data) 
+    {
+        attachedCollider.enabled = true;
+        equipableEntity.Unequip();
+        transform.SetParent(null);
+        transform.position = data.dropPosition;
+        transform.rotation = data.dropRotation;
+    }
 }
 
 public abstract class RangedWeapon: Weapon
