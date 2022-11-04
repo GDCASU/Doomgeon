@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028334, g: 0.22571328, b: 0.3069217, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -152,6 +152,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 03e020fd36d0fe74f8af3db61307bd88, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  terrain: {fileID: 2586202750835964775, guid: 8dc79be85dcf8474284978f55e729b4f, type: 3}
+  mapLandmarks:
+  - {fileID: 3699231937878728747, guid: 82c02019b44bc8149a12caec13c51c31, type: 3}
+  - {fileID: 1199468181913334419, guid: a067e8283385c224a8ce090061ee21bd, type: 3}
+  - {fileID: 2626593022759541845, guid: af3a128b3031d8d4e94540f66ed1b500, type: 3}
+  - {fileID: 7901825002529798910, guid: de023afa2b9ebd54c9c08d0bd8fd9194, type: 3}
+  - {fileID: 448852244065332063, guid: 8c13bb3a90e719f408b68a80bf62cc6b, type: 3}
+  objSpawnRate: 2
+  objSpawnMinSpacing: 2
+  objSpawnMaxSpacing: 7
+  dirType: 0
+  startPos: {x: 0, y: 0, z: 0}
+  startType: 2
+  minVector: {x: -50, y: -10, z: -50}
+  maxVector: {x: 100, y: 100, z: 100}
+  walkCycles: 10
+  walkLength: 10
 --- !u!4 &288400124
 Transform:
   m_ObjectHideFlags: 0
@@ -329,6 +346,26 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44852e896d6c21740bc14b13c9c553dc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  cellSize: 10
+  bluePrintPrefab: {fileID: 6321413536967066871, guid: 97b96c366fb5e44489c9d5c503f211d0,
+    type: 3}
+  gPrefab: {fileID: 7523805458283857721, guid: 2c8745d3895119f4bbc52939e875ccde, type: 3}
+  tPrefab: {fileID: 16586390388644377, guid: 074648d60cd54ba4caac6107b9238317, type: 3}
+  hPrefab: {fileID: 160632190577553635, guid: 5e3f735d944e5c247b3cfc9db09314c3, type: 3}
+  lPrefab: {fileID: 6321413536967066871, guid: 97b96c366fb5e44489c9d5c503f211d0, type: 3}
+  jPrefab: {fileID: 6321413536967066871, guid: 97b96c366fb5e44489c9d5c503f211d0, type: 3}
+  bPrefab: {fileID: 6321413536967066871, guid: 97b96c366fb5e44489c9d5c503f211d0, type: 3}
+  maxRooms: 7
+  tRoomSpawnChance: 80
+  hRoomSpawnChance: 35
+  minX: 0
+  maxX: 0
+  minY: 0
+  maxY: 0
+  minZ: 0
+  maxZ: 0
+  roomList: []
+  linkedRooms: 
 --- !u!1 &1519603663
 GameObject:
   m_ObjectHideFlags: 0
